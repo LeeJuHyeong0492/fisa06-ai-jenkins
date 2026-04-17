@@ -6,7 +6,7 @@ pipeline {
     environment {
         DOCKER_CREDS = credentials('docker-hub') 
         IMAGE_NAME = 'fisa-app'
-        DEPLOY_IP = '52.78.212.190'
+        DEPLOY_IP = '3.35.55.0'
         SSH_CREDS_ID = 'ec2-fastapi-server'
         CONTAINER_NAME = 'docker-fastapi'
         FULL_IMAGE_PATH = "${DOCKER_CREDS_USR}/${IMAGE_NAME}"
